@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap");
+body {
+  overflow-x: hidden;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+#Main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+#Main #firstBox {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  animation: Fade 5s forwards;
+}
+@keyframes Fade {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#Main #firstBox .mainbg {
+  height: 100%;
+  width: 100%;
+  background: url(../img/main.jpg) no-repeat;
+  background-position: 0 -140px;
+}
+#Main #firstBox .loading {
+  position: absolute;
+  left: 50%;
+  bottom: 22%;
+  transform: translateX(-50%);
+}
+#Main #firstBox .loading li {
+  font-size: 80px;
+  color: #fff;
+}
+#Main #firstBox .loading li::before {
+  content: "";
+  position: absolute;
+  left: -70px;
+  bottom: -2px;
+  border-radius: 20px;
+  width: 500px;
+  height: 15px;
+  background: rgba(255, 255, 255, 0.4);
+}
+#Main #firstBox .loading li::after {
+  content: "";
+  position: absolute;
+  left: -70px;
+  bottom: -2px;
+  border-radius: 20px;
+  width: 150px;
+  height: 15px;
+  background: #ecc851;
+  animation: loading infinite alternate linear;
+  animation-duration: 2s;
+}
+@keyframes loading {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(350px);
+  }
+}
+#Main #firstBox .loading li p {
+  display: block;
+  width: 300px;
+  height: 130px;
+  padding-bottom: 15px;
+  letter-spacing: 10px;
+  font-weight: 700;
+  font-family: "Kalam", cursive;
+}
+#Main #firstBox .loading li .typed-cursor {
+  display: none;
+}
+#Main #secondBox {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  background: url(../img/main2.jpg) no-repeat;
+  background-position: 0 -100px;
+  background-size: cover;
+}
+#Main #secondBox .photoShooter ul li {
+  position: absolute;
+  top: 20%;
+  left: 200%;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 3px 3px 15px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+#Main #secondBox .photoShooter ul li img {
+  width: 400px;
+  height: 400px;
+  border-radius: 5px;
+}
+#Main #secondBox .photoShooter ul li:nth-child(13) {
+  z-index: 6;
+  box-shadow: none;
+}
+#Main #secondBox .photoShooter ul li:nth-child(13) a {
+  display: block;
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+  font-family: "Kalam", cursive;
+}
+#Main #secondBox .photoShooter ul li:nth-child(13) a i {
+  margin-right: 15px;
+  animation: scaleup infinite alternate 1s;
+}
+@keyframes scaleup {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}/*# sourceMappingURL=style.css.map */

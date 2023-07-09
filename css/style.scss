@@ -1,0 +1,86 @@
+@charset "utf-8";
+// 폰트 IBM Plex Sans KR // font-family: 'IBM Plex Sans KR', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@600&display=swap');
+// 폰트 나눔고딕 // font-family: 'Nanum Gothic', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+// 카렘 손글씨 // font-family: 'Kalam', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+
+// 컬러 팔레트
+$bg-color:#222;
+$bio-green : #225322bd ;
+$yellow-signature : #ecc851 ;
+
+body{overflow-x: hidden; font-family: 'Nanum Gothic', sans-serif;}
+
+
+#Main{height: 100%; width: 100%; position: relative;
+    #firstBox{
+        position: absolute;height: 100%; width: 100%; z-index: 5;
+        animation: Fade 5s forwards;  
+        @keyframes Fade {
+            0% {opacity: 1;}
+            70% {opacity: .8;}
+            100% {opacity: 0;}}
+
+            .mainbg{height: 100%; width: 100%; // 메인 배경 사진
+                background: url(../img/main.jpg) no-repeat; background-position: 0 -140px;}
+
+             // 메인 로딩 타이핑 + 애니메이션
+            .loading{position: absolute; left: 50%; bottom: 22%; transform: translateX(-50%);
+                li{
+                    font-size: 80px; color: #fff;
+                    &::before{   content: ""; // 회색바
+                        position: absolute; left: -70px; bottom: -2px; border-radius: 20px;
+                        width: 500px; height: 15px; background: rgba(255,255,255,0.4)}
+                    &::after{   content: ""; // 무빙바
+                        position: absolute; left: -70px; bottom: -2px; border-radius: 20px;
+                        width: 150px; height: 15px; background: $yellow-signature;
+                        animation: loading infinite alternate linear; animation-duration: 2s;
+                        @keyframes loading {
+                            from { transform: translateX(0px); }
+                            to { transform: translateX(350px); }
+                        }}
+                    p{
+                        display: block; width: 300px; height: 130px;
+                        padding-bottom: 15px; letter-spacing: 10px; font-weight: 700;
+                        font-family: 'Kalam', cursive;}
+                    .typed-cursor{display: none;}
+                }
+            }
+    }
+    #secondBox{
+        position: absolute;height: 100%; width: 100%;z-index: 3;
+        // 메인2 배경 사진
+        background: url(../img/main2.jpg) no-repeat; background-position: 0 -100px; background-size: cover;
+        .photoShooter{
+            ul{ 
+                li{
+                    position: absolute; top: 20%; left: 200%; transition: all .5s ease-in-out;
+                    box-shadow: 3px 3px 15px 10px rgba(0,0,0,.4); border-radius: 5px;
+                    transition: all .4s ease-in-out;
+
+                    img{width: 400px; height: 400px; border-radius: 5px;}
+                    &:nth-child(13){
+                        z-index: 6;  box-shadow: none;
+                        a{
+                            display: block; cursor: pointer;
+                            font-size: 30px; color:  white; font-family: 'Kalam', cursive;
+                            i{ // 인스타 아이콘 스케일 애니메이션
+                                margin-right: 15px;
+                                animation: scaleup infinite alternate 1s; 
+                                @keyframes scaleup {
+                                    from { transform: scale(1) ; }
+                                    to { transform: scale(1.2); }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
