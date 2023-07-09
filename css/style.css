@@ -15,7 +15,7 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: 5;
+  z-index: 1;
   animation: Fade 5s forwards;
 }
 @keyframes Fade {
@@ -91,7 +91,6 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: 3;
   background: url(../img/main2.jpg) no-repeat;
   background-position: 0 -100px;
   background-size: cover;
@@ -111,7 +110,6 @@ body {
   border-radius: 5px;
 }
 #Main #secondBox .photoShooter ul li:nth-child(13) {
-  z-index: 6;
   box-shadow: none;
 }
 #Main #secondBox .photoShooter ul li:nth-child(13) a {
@@ -120,6 +118,7 @@ body {
   font-size: 30px;
   color: white;
   font-family: "Kalam", cursive;
+  font-weight: bold;
 }
 #Main #secondBox .photoShooter ul li:nth-child(13) a i {
   margin-right: 15px;

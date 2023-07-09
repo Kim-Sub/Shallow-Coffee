@@ -1,4 +1,11 @@
-//● secondBox 이미지 슈터
+ //● firstBox 5초 후 none
+setTimeout(function() {
+  document.querySelector("#firstBox").style.display = "none";
+}, 5000);
+ 
+
+ 
+ //● secondBox 이미지 슈터
 
 const imagesBullet = document.querySelectorAll(".photoShooter>ul>li");
     // 목표지점  top 40% , left 20% 근처
@@ -34,3 +41,4 @@ function animateImages() {
 window.addEventListener('load', () => {
     setTimeout(animateImages, 3500);
   });
+ 
