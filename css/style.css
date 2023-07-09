@@ -4,6 +4,7 @@
 body {
   overflow-x: hidden;
   font-family: "Nanum Gothic", sans-serif;
+  cursor: url("../img/mouse.svg"), auto;
 }
 
 #Main {
