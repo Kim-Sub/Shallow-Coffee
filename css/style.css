@@ -110,10 +110,10 @@ body {
   height: 400px;
   border-radius: 5px;
 }
-#Main #secondBox .photoShooter ul li:nth-child(13) {
+#Main #secondBox .photoShooter ul li:nth-child(13), #Main #secondBox .photoShooter ul li:nth-child(14) {
   box-shadow: none;
 }
-#Main #secondBox .photoShooter ul li:nth-child(13) a {
+#Main #secondBox .photoShooter ul li:nth-child(13) a, #Main #secondBox .photoShooter ul li:nth-child(14) a {
   display: block;
   cursor: pointer;
   font-size: 30px;
@@ -121,7 +121,7 @@ body {
   font-family: "Kalam", cursive;
   font-weight: bold;
 }
-#Main #secondBox .photoShooter ul li:nth-child(13) a i {
+#Main #secondBox .photoShooter ul li:nth-child(13) a i, #Main #secondBox .photoShooter ul li:nth-child(14) a i {
   margin-right: 15px;
   animation: scaleup infinite alternate 1s;
 }

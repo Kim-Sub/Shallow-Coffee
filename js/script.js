@@ -23,6 +23,7 @@ const imageConfigs = [  //배열
   { top: "47%", left: "18%", rotation: "-3deg" },
   { top: "48%", left: "20%", rotation: "0deg" },
   { top: "75%", left: "20%", rotation: "0deg" }, // go to insta 버튼
+  { top: "82%", left: "20%", rotation: "0deg" }, // go to home 버튼
 ];
 
 function animateImages() {
