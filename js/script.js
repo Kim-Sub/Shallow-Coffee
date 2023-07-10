@@ -1,10 +1,11 @@
- //● firstBox 5초 후 none
+
+
+//● firstBox 5초 후 none
 setTimeout(function() {
   document.querySelector("#firstBox").style.display = "none";
 }, 5000);
  
 
- 
  //● secondBox 이미지 슈터
 
 const imagesBullet = document.querySelectorAll(".photoShooter>ul>li");
