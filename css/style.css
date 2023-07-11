@@ -16,7 +16,7 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
   animation: Fade 5s forwards;
 }
 @keyframes Fade {
@@ -92,6 +92,7 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
+  z-index: 2;
   background: url(../img/main2.jpg) no-repeat;
   background-position: 0 -100px;
   background-size: cover;
@@ -132,4 +133,16 @@ body {
   to {
     transform: scale(1.2);
   }
+}
+#Main #thirdBox {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  background: white;
+}
+#Main #thirdBox #slideBox {
+  width: 765px;
+  height: 100%;
+  background: red;
 }/*# sourceMappingURL=style.css.map */

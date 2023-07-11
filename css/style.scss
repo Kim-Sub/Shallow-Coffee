@@ -19,7 +19,7 @@ body{
 
 #Main{height: 100%; width: 100%; position: relative;
     #firstBox{
-        position: absolute;height: 100%; width: 100%; z-index: 1;
+        position: absolute;height: 100%; width: 100%; z-index: 3;
         animation: Fade 5s forwards;  
         @keyframes Fade {
             0% {opacity: 1;}
@@ -53,7 +53,7 @@ body{
             }
     }
     #secondBox{
-        position: absolute;height: 100%; width: 100%;
+        position: absolute;height: 100%; width: 100%; z-index: 2;
         // 메인2 배경 사진
         background: url(../img/main2.jpg) no-repeat; background-position: 0 -100px; background-size: cover;
         .photoShooter{
@@ -83,6 +83,12 @@ body{
                 
             }
         }
+    }
+    #thirdBox{
+        position: absolute;height: 100%; width: 100%; z-index: 5; background: white;
+        #slideBox{
+            width: 765px; height: 100%; background: red;
+                }
     }
 }
 
