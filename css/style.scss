@@ -61,8 +61,6 @@ body{
                 li{
                     position: absolute; top: 20%; left: 200%; transition: all .5s ease-in-out;
                     box-shadow: 3px 3px 15px 10px rgba(0,0,0,.4); border-radius: 5px;
-                    transition: all .4s ease-in-out;
-
                     img{width: 400px; height: 400px; border-radius: 5px;}
                     &:nth-child(13),&:nth-child(14){
                         box-shadow: none;
@@ -85,7 +83,7 @@ body{
         }
     }
     #thirdBox{
-        position: absolute;height: 100%; width: 100%; z-index: 5; background: white;
+        position: absolute;height: 100%; width: 100%; z-index: -2; background: white;
         #slideBox{
             width: 765px; height: 100%; background: red;
                 }
